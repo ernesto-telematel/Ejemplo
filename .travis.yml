@@ -86,8 +86,8 @@ virtualenv:
 #  - gem install compass --pre
 
 install:
-  - git clone --depth=1 https://github.com/ernesto-telematel/Ejemplo.git
-  - export PATH=${HOME}/Ejemplo/travis:${PATH}
+  - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - travis_install_nightly
 
 script:
