@@ -68,7 +68,7 @@ env:
   - LINT_CHECK="1"
   - TRANSIFEX="1"
   - TESTS="1" ODOO_REPO="odoo/odoo"
-  - TESTS="1" ODOO_REPO="ernesto-telematel/Ejemplo"
+  - TESTS="1" ODOO_REPO="OCA/OCB"
 # either use the two lines above or the two below. Don't change the default if
 # it's not necessary (it is only necessary if modules in your repository can't
 # be installed in the same database. And you get a huge speed penalty in your
@@ -86,7 +86,7 @@ virtualenv:
 #  - gem install compass --pre
 
 install:
-  - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+  - git clone --depth=1 https://github.com/telematel/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - travis_install_nightly
 
